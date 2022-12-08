@@ -23,7 +23,7 @@ class HomeViewBady extends StatelessWidget {
           Text(
             "Best Seller",
             style: StylesApp.titleMedium,
-          )
+          ),
         ],
       ),
     );

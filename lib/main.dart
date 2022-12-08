@@ -2,6 +2,7 @@ import 'package:book_app/core/utils/color.dart';
 import 'package:book_app/test2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'Features/Spilash/presention/views/spilash_screen.dart';
 
@@ -18,7 +19,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
-          scaffoldBackgroundColor: kPrimyColor, textTheme: TextTheme()),
+          scaffoldBackgroundColor: kPrimyColor,
+          textTheme:
+              GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme)),
       home: TestTwo(),
     );
   }
