@@ -1,3 +1,5 @@
+import 'package:book_app/Features/home/presentation/views/widgets/best_saler.dart';
+import 'package:book_app/core/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
@@ -8,12 +10,22 @@ class HomeViewBady extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: const [
-        CustomAppBar(),
-        FeaturedBookListView(),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: const [
+          CustomAppBar(),
+          FeaturedBookListView(),
+          SizedBox(
+            height: 50,
+          ),
+          Text(
+            "Best Seller",
+            style: StylesApp.titleMedium,
+          )
+        ],
+      ),
     );
   }
 }
-
