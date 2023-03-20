@@ -12,7 +12,7 @@ class HomeViewBady extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.symmetric(horizontal: 30),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -56,25 +56,33 @@ class BestSellerListViewItem extends StatelessWidget {
                     )),
               ),
             ),
-            // Column(
-            //   children: [
-            //     Text(
-            //       "Best Seller",
-            //       style: StylesApp.titleMedium,
-            //     ),
-            //     SizedBox(
-            //       height: 30,
-            //     ),
-            //     Row(
-            //       children: [
-            //         Text(
-            //           "19.19\$",
-            //           style: StylesApp.titleMedium,
-            //         ),
-            //       ],
-            //     ),
-            //   ],
-            // )
+            const SizedBox(
+              width: 30,
+            ),
+            Column(
+              children: [
+                SizedBox(
+                  width: MediaQuery.of(context).size.width * .5,
+                  child: const Text(
+                    'Harry potter and the Global of Fire ',
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: StylesApp.textStyle20,
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                // Row(
+                //   children: const [
+                //     Text(
+                //       "19.19\$",
+                //       style: StylesApp.textStyle16,
+                //     ),
+                //   ],
+                // ),
+              ],
+            )
           ],
         ),
       ),
