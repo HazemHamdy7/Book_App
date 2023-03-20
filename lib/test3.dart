@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:get/get_navigation/src/routes/transitions_type.dart';
 
-import 'Features/Spilash/presention/views/spilash_screen.dart';
-import 'core/utils/color.dart';
 
 class hhhh extends StatefulWidget {
   const hhhh({super.key});

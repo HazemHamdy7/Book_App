@@ -15,10 +15,10 @@ class BestSaler extends StatelessWidget {
           width: 150,
         ),
         Column(
-          children: [Text("Harry Potter ")],
+          children: const [Text("Harry Potter ")],
         ),
         Row(
-          children: [Text("19.99\$")],
+          children: const [Text("19.99\$")],
         )
       ],
     );
