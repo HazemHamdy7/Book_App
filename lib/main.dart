@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: kPrimyColor,
           textTheme:
               GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme)),
-      home: TestTwo(),
+      home: const TestTwo(),
     );
   }
 }
