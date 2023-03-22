@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 
 import 'Features/Spilash/presention/views/spilash_screen.dart';
 import 'core/utils/color.dart';
@@ -59,9 +58,9 @@ class _TestTwoState extends State<TestTwo> {
                           borderRadius: BorderRadius.circular(10),
                         )),
                     onPressed: () {
-                      Get.to(() => const SpilashScereen(),
-                          transition: Transition.fade,
-                          duration: kTranstionDuration);
+                      // Get.to(() => const SpilashScereen(),
+                      //     transition: Transition.fade,
+                      //     duration: kTranstionDuration);
                     },
                     child: Text(
                       'Read The Books Any Time',
