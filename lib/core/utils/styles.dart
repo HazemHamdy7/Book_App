@@ -28,8 +28,17 @@ abstract class StylesApp {
     fontSize: 14,
     fontWeight: FontWeight.normal,
   );
+  static const textStyle1Bold14 = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.bold,
+  );
+
   static const textStyle16 = TextStyle(
     fontSize: 16,
     fontWeight: FontWeight.w500,
+  );
+  static const textStyle1Bold16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
   );
 }

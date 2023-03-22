@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import '../../../../../core/utils/assets.dart';
 import '../../../../../core/utils/color.dart';
@@ -12,9 +11,9 @@ class BestSellerListViewItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 8),
+      padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
       child: SizedBox(
-        height: 125,
+        height: 110,
         child: Row(
           children: [
             // to responsive image widget
@@ -63,10 +62,7 @@ class BestSellerListViewItem extends StatelessWidget {
                   ),
                   Row(
                     children: const [
-                      Text(
-                        "19.19\$",
-                        style: StylesApp.textStyleBold20,
-                      ),
+                      Text("19.19\$", style: StylesApp.textStyle1Bold16),
                       Spacer(),
                       BookRating(),
                     ],
@@ -80,4 +76,3 @@ class BestSellerListViewItem extends StatelessWidget {
     );
   }
 }
-
