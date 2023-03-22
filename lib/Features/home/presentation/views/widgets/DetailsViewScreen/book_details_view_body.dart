@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../../../../../core/utils/styles.dart';
+import '../../../../../../core/utils/widget/custom_bottom.dart';
 import '../HomeViewScreen/book_rating.dart';
 import '../HomeViewScreen/custom_book_image.dart';
+import 'book_action_bottom.dart';
 import 'custom_book_details_app_bar.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
@@ -47,7 +49,11 @@ class BookDetailsViewBody extends StatelessWidget {
           ),
           const BookRating(
             mainAxisAlignment: MainAxisAlignment.center,
-          )
+          ),
+          const SizedBox(
+            height: 37,
+          ),
+          const BooksActionBottom()
         ],
       ),
     );
