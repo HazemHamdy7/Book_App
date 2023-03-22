@@ -4,11 +4,12 @@ import '../../Features/Spilash/presention/views/spilash_screen.dart';
 
 import '../../Features/home/presentation/views/book_details_view.dart';
 import '../../Features/home/presentation/views/home_view.dart';
-import '../../Features/home/presentation/views/widgets/DetailsViewScreen/book_details_view_body.dart';
+import '../../Features/search/views/search_view.dart';
 
 abstract class AppRouter {
   static const routerHomeView = '/homeView';
   static const routerBookDetailsView = '/bookDetailsView';
+  static const routerSearchView = '/routerSearchView';
   static final router = GoRouter(routes: [
     GoRoute(
       path: '/',
@@ -21,6 +22,10 @@ abstract class AppRouter {
     GoRoute(
       path: routerBookDetailsView,
       builder: (context, state) => const BookDetailsView(),
+    ),
+    GoRoute(
+      path: routerSearchView,
+      builder: (context, state) => const SearchView(),
     ),
   ]);
 }

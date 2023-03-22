@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/utils/widget/custom_bottom.dart';
+import '../../../../../../core/widget/custom_bottom.dart';
 
 class BooksActionBottom extends StatelessWidget {
   const BooksActionBottom({super.key});
