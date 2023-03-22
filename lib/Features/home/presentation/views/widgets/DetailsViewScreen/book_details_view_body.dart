@@ -1,6 +1,6 @@
+import 'package:book_app/Features/home/presentation/views/widgets/DetailsViewScreen/similler_list_view_image.dart';
 import 'package:flutter/material.dart';
 import '../../../../../../core/utils/styles.dart';
-import '../../../../../../core/utils/widget/custom_bottom.dart';
 import '../HomeViewScreen/book_rating.dart';
 import '../HomeViewScreen/custom_book_image.dart';
 import 'book_action_bottom.dart';
@@ -53,7 +53,26 @@ class BookDetailsViewBody extends StatelessWidget {
           const SizedBox(
             height: 37,
           ),
-          const BooksActionBottom()
+          const BooksActionBottom(),
+          const SizedBox(
+            height: 40,
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              "You can also like",
+              style: StylesApp.textStyle14.copyWith(
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 16,
+          ),
+          const SimillerListViewItem(),
+          const SizedBox(
+            height: 40,
+          ),
         ],
       ),
     );
