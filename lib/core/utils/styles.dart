@@ -23,6 +23,11 @@ abstract class StylesApp {
     fontWeight: FontWeight.normal,
     fontFamily: kGtSectraFine,
   );
+  static const textStyleBold30 = TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.bold,
+    fontFamily: kGtSectraFine,
+  );
 
   static const textStyle14 = TextStyle(
     fontSize: 14,

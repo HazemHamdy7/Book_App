@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../../../../core/utils/styles.dart';
 import '../HomeViewScreen/custom_book_image.dart';
 import 'custom_book_details_app_bar.dart';
 
@@ -17,9 +18,29 @@ class BookDetailsViewBody extends StatelessWidget {
           const CustomBookDetailsAppBar(),
           Padding(
             padding: EdgeInsets.symmetric(
-                horizontal: width * .17, vertical: height * .01),
+                horizontal: width * .2, vertical: height * .01),
             child: const CustomBookImage(),
-          )
+          ),
+          const SizedBox(
+            height: 43,
+          ),
+          const Text(
+            "The Jungle book",
+            style: StylesApp.textStyleBold30,
+          ),
+          const SizedBox(
+            height: 6,
+          ),
+          Opacity(
+            opacity: .7,
+            child: Text(
+              "Rudyard Kipling",
+              style: StylesApp.textStyle18.copyWith(
+                fontStyle: FontStyle.italic,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
         ],
       ),
     );
