@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../../../../../core/utils/color.dart';
-import '../../../../../core/utils/styles.dart';
+import '../../../../../../core/utils/color.dart';
+import '../../../../../../core/utils/styles.dart';
 import 'best_saller_list_view.dart';
-import 'best_seller_list_view_Items.dart';
 import 'custom_app_bar.dart';
 import 'featuredBook_list_view.dart';
 
