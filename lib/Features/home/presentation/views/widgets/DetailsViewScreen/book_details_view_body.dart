@@ -26,10 +26,7 @@ class BookDetailsViewBody extends StatelessWidget {
                 child: const CustomBookImage(),
               ),
               const SizedBox(height: 43),
-              const Text(
-                "The Jungle book",
-                style: StylesApp.textStyleBold30,
-              ),
+              const Text("The Jungle book", style: StylesApp.textStyleBold30),
               const SizedBox(height: 6),
               Opacity(
                   opacity: .7,
