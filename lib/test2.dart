@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'Features/Spilash/presention/views/spilash_screen.dart';
-import 'core/utils/color.dart';
-//import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
-
 class TestTwo extends StatefulWidget {
   const TestTwo({super.key});
 
