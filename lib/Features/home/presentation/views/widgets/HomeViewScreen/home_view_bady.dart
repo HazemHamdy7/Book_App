@@ -21,6 +21,7 @@ class HomeViewBady extends StatelessWidget {
               child: CustomAppBar(),
             ),
             const FeaturedBookListView(),
+            
             const SizedBox(height: 50),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30),
