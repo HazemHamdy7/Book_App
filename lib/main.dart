@@ -1,12 +1,10 @@
-import 'package:book_app/Features/home/data/repos/home_repo_implt.dart';
-import 'package:book_app/Features/home/presentation/manger/featured%20_books%20_cubit/featured_books_cubit.dart';
-import 'package:book_app/core/utils/api_service.dart';
-import 'package:book_app/core/utils/service_locator.dart';
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:book_app/Features/home/data/repos/home_repo_implt.dart';
+import 'package:book_app/Features/home/presentation/manger/featured%20_books%20_cubit/featured_books_cubit.dart';
 import 'package:book_app/core/utils/color.dart';
+import 'package:book_app/core/utils/service_locator.dart';
 import 'Features/home/presentation/manger/newset_book_cubit/newset_books_cubit.dart';
 import 'core/utils/app_router.dart';
 
@@ -20,7 +18,7 @@ class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) {      
     return MultiBlocProvider(
       providers: [
         BlocProvider(
