@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {      
+  Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
         BlocProvider(
@@ -26,8 +26,8 @@ class MyApp extends StatelessWidget {
                   getIt.get<HomeRepoImpl>(),
                 )..fetchFeatureBooks()),
         BlocProvider(
-            create: (context) => NewsetBooksCubit(
-                  getIt.get<HomeRepoImpl>(),
+          create: (context) => NewsetBooksCubit(
+            getIt.get<HomeRepoImpl>(),
                 )),
       ],
       child: MaterialApp.router(
