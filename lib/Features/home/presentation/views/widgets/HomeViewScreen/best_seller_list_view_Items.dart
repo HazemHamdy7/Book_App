@@ -67,7 +67,7 @@ class BookListViewItem extends StatelessWidget {
                       height: 3,
                     ),
                     Text(
-                      bookModel.volumeInfo.authors![0],
+                      bookModel.volumeInfo.authors![0] ,
                       maxLines: 2,
                       style: StylesApp.textStyle14,
                     ),
