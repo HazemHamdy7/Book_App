@@ -28,7 +28,7 @@ class BookListViewItem extends StatelessWidget {
           child: Row(
             children: [
               CustomBookImage(
-                imageUrl: bookModel.volumeInfo.imageLinks!.thumbnail,
+                imageUrl: bookModel.volumeInfo.imageLinks?.thumbnail ?? '',
               ),
               //! to responsive image widget
               // AspectRatio(

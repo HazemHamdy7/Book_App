@@ -31,7 +31,7 @@ abstract class StylesApp {
 
   static const textStyle14 = TextStyle(
     fontSize: 14.0,
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeight.normal
   );
   static const textStyle1Bold14 = TextStyle(
     fontSize: 14,
