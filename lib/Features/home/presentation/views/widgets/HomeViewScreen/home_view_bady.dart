@@ -11,7 +11,7 @@ class HomeViewBady extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(slivers: [
+    return CustomScrollView(physics: const BouncingScrollPhysics(), slivers: [
       SliverToBoxAdapter(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -21,12 +21,11 @@ class HomeViewBady extends StatelessWidget {
               child: CustomAppBar(),
             ),
             const FeaturedBookListView(),
-            
             const SizedBox(height: 50),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 30),
               child: Text(
-                "Best Seller",
+                "Newset Books",
                 style: StylesApp.textStyle18.copyWith(
                   fontFamily: kGtSectraFine,
                 ),
