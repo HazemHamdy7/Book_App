@@ -1,6 +1,7 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/utils/assets.dart';
+import '../../../../../../core/widget/custom_loading_indicator.dart';
 
 class CustomBookImage extends StatelessWidget {
   const CustomBookImage({Key? key, required this.imageUrl}) : super(key: key);
@@ -8,15 +9,17 @@ class CustomBookImage extends StatelessWidget {
   final String imageUrl;
   @override
   Widget build(BuildContext context) {
-    return AspectRatio(
-      aspectRatio: 2.6 / 4,
-      child: Container(
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
-            image: DecorationImage(
-              fit: BoxFit.fill,
-              image: NetworkImage(imageUrl),
-            )),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(16),
+      child: AspectRatio(
+        aspectRatio: 2.5 / 4,
+        child: CachedNetworkImage(
+          placeholder: (context, url) => const CustomLoadingIndecator(),
+          errorWidget: (context, url, error) =>
+              const Icon(Icons.error, size: 24),
+          fit: BoxFit.fill,
+          imageUrl: imageUrl,
+        ),
       ),
     );
   }
