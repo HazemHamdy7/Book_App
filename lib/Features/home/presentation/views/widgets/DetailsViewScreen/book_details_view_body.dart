@@ -25,7 +25,7 @@ class BookDetailsViewBody extends StatelessWidget {
                     horizontal: width * .2, vertical: height * .01),
                 child: const CustomBookImage(
                   imageUrl:
-                      'https://images.search.yahoo.com/search/images?p=image&fr=mcafee&type=E210US91105G0&imgurl=http%3A%2F%2Fwww.wallpapers13.com%2Fwp-content%2Fuploads%2F2015%2F12%2FNature-Lake-Bled.-Desktop-background-image.jpg#id=0&iurl=http%3A%2F%2Fwww.wallpapers13.com%2Fwp-content%2Fuploads%2F2015%2F12%2FNature-Lake-Bled.-Desktop-background-image.jpg&action=click',
+                      'https://www.wallpapers13.com/wp-content/uploads/2015/12/Nature-Lake-Bled.-Desktop-background-image.jpg',
                 ),
               ),
               const SizedBox(height: 43),

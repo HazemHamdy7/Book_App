@@ -21,7 +21,8 @@ class BookListViewItem extends StatelessWidget {
       ),
       child: GestureDetector(
         onTap: () {
-          GoRouter.of(context).push(AppRouter.routerBookDetailsView);
+          GoRouter.of(context)
+              .push(AppRouter.routerBookDetailsView, extra: bookModel);
         },
         child: SizedBox(
           height: 110,
@@ -67,7 +68,7 @@ class BookListViewItem extends StatelessWidget {
                       height: 3,
                     ),
                     Text(
-                      bookModel.volumeInfo.authors![0] ,
+                      bookModel.volumeInfo.authors![0],
                       maxLines: 2,
                       style: StylesApp.textStyle14,
                     ),
