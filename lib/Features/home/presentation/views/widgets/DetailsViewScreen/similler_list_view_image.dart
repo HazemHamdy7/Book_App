@@ -14,18 +14,21 @@ class SimillerListViewItem extends StatelessWidget {
     return BlocBuilder<SimilarBooksCubit, SimilarBooksState>(
       builder: (context, state) {
         if (state is SimilarBooksSuccess) {
-          return SizedBox(
-            height: MediaQuery.of(context).size.height * .15,
-            child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 5),
-                    child: CustomBookImage(
-                        imageUrl:
-                            'https://www.wallpapers13.com/wp-content/uploads/2015/12/Nature-Lake-Bled.-Desktop-background-image.jpg'),
-                  );
-                }),
+          return Expanded(flex: 50,
+            child: SizedBox(
+              height: MediaQuery.of(context).size.height * .15,
+              child: ListView.builder(
+                itemCount:state.books.length,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return   Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 5),
+                      child: CustomBookImage(
+                          imageUrl:
+                              state.books[index].volumeInfo.imageLinks?.thumbnail??''),
+                    );
+                  }),
+            ),
           );
         } else if (state is SimilarBooksFailure) {
           return CustomErrorWidget(errorMesage: state.errorMessage);
