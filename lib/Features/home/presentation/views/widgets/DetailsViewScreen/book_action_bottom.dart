@@ -32,7 +32,7 @@ class BooksActionBottom extends StatelessWidget {
             child: CusttomBottom(
               fontSize: 16,
               onPressed: () {
-                lacnchCustomUrl(context, bookModel.volumeInfo.previewLink);
+                lacnchCustomUrl(context, bookModel.volumeInfo.previewLink!);
               },
               text: getText(bookModel),
               backgroundColor: const Color(0xffEF8262),
