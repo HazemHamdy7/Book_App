@@ -49,11 +49,11 @@ class BookDetailsViewBody extends StatelessWidget {
                           fontWeight: FontWeight.w500))),
               const SizedBox(height: 18),
               BookRating(
-                  rating: bookmodel.volumeInfo.averageRating ?? 0,
-                  count: bookmodel.volumeInfo.ratingsCount ?? 100,
+                  rating: bookmodel.volumeInfo.averageRating ?? 2.5,
+                  count: bookmodel.volumeInfo.ratingsCount ?? 103,
                   mainAxisAlignment: MainAxisAlignment.center),
               const SizedBox(height: 37),
-              const BooksActionBottom(),
+                BooksActionBottom(bookModel:bookmodel ,),
               const Expanded(child: SizedBox(height: 40)),
               Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 8 ,vertical: 8),

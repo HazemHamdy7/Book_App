@@ -8,10 +8,11 @@ class CusttomBottom extends StatelessWidget {
       required this.textColor,
       required this.text,
       this.borderRadius,
-      this.fontSize});
+      this.fontSize, this.onPressed});
 
   final Color backgroundColor;
   final String text;
+  final void Function()? onPressed;
   final Color textColor;
   final BorderRadius? borderRadius;
   final double? fontSize;
@@ -21,7 +22,7 @@ class CusttomBottom extends StatelessWidget {
     return SizedBox(
       height: 48,
       child: TextButton(
-          onPressed: () {},
+          onPressed: onPressed,
           style: TextButton.styleFrom(
             backgroundColor: backgroundColor,
             shape: RoundedRectangleBorder(
