@@ -31,7 +31,7 @@ class CusttomBottom extends StatelessWidget {
           ),
           child: Text(
             text,
-            style: StylesApp.textStyle18.copyWith(
+            style: StylesApp.textStyleBold20.copyWith(
                 color: textColor,
                 fontWeight: FontWeight.w900,
                 fontSize: fontSize),

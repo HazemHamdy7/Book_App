@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../../../../../../core/utils/finction/functions_url.dart';
 import '../../../../../../core/widget/custom_bottom.dart';
 import '../../../../data/models/book_model/book_model.dart';
 
@@ -16,7 +17,9 @@ class BooksActionBottom extends StatelessWidget {
         children: [
           const Expanded(
             child: CusttomBottom(
-              text: ' 19.99\$',
+              // text: ' 19.99\$',
+              text: 'Free',
+
               backgroundColor: Colors.white,
               textColor: Colors.black,
               borderRadius: BorderRadius.only(
@@ -28,17 +31,10 @@ class BooksActionBottom extends StatelessWidget {
           Expanded(
             child: CusttomBottom(
               fontSize: 16,
-              onPressed: () async {
-                Uri uri = Uri.parse(
-                   // 'https://books.google.com.eg/books?id=--f9vH8XnMsC&dq=programming&hl=ar'
-                     bookModel.volumeInfo.previewLink!
-                    );
-                if (!await launchUrl(uri)) {
-                  
-                  throw Exception('Could not launch $uri');
-                }
+              onPressed: () {
+                lacnchCustomUrl(context, bookModel.volumeInfo.previewLink);
               },
-              text: ' Free Preview',
+              text: getText(bookModel),
               backgroundColor: const Color(0xffEF8262),
               textColor: Colors.white,
               borderRadius: const BorderRadius.only(
@@ -50,5 +46,13 @@ class BooksActionBottom extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  String getText(BookModel bookModel) {
+    if (bookModel.volumeInfo.previewLink == null) {
+      return 'Not available';
+    } else {
+      return ' Free Preview';
+    }
   }
 }
