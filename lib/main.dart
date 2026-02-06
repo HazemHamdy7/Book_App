@@ -1,13 +1,12 @@
-import 'package:book_app/core/utils/color.dart';
-import 'package:book_app/test2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'Features/Spilash/presention/views/spilash_screen.dart';
+import 'package:book_app/core/utils/color.dart';
+import 'package:book_app/test2.dart';
 
 void main() {
-  runApp(const MyApp());
+  // runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -22,7 +21,7 @@ class MyApp extends StatelessWidget {
           scaffoldBackgroundColor: kPrimyColor,
           textTheme:
               GoogleFonts.montserratTextTheme(ThemeData.dark().textTheme)),
-      home: TestTwo(),
+      home: const TestTwo(),
     );
   }
-}
+} 
