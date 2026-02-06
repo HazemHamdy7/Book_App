@@ -1,9 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-
-import 'Features/Spilash/presention/views/spilash_screen.dart';
-import 'core/utils/color.dart';
-//import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
 
 class TestTwo extends StatefulWidget {
   const TestTwo({super.key});
@@ -59,9 +54,9 @@ class _TestTwoState extends State<TestTwo> {
                           borderRadius: BorderRadius.circular(10),
                         )),
                     onPressed: () {
-                      Get.to(() => const SpilashScereen(),
-                          transition: Transition.fade,
-                          duration: kTranstionDuration);
+                      // Get.to(() => const SpilashScereen(),
+                      //     transition: Transition.fade,
+                      //     duration: kTranstionDuration);
                     },
                     child: Text(
                       'Read The Books Any Time',
